@@ -8,6 +8,12 @@ module:testrunner
 
 
 GET     /                                       App.Index
+
+GET     /user/tasks                             User.GetTasks
+POST    /user/tasks/:id                         User.AddTask
+PUT     /user/tasks/:id                         User.UpdateTask
+DELETE  /user/tasks/:id                         User.RemoveTask
+
 GET     /user/register                          User.Register
 POST    /user/register                          User.SaveNewUser
 POST    /user/login                             User.Login

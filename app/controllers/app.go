@@ -1,13 +1,30 @@
 package controllers
 
 import (
-	"github.com/revel/revel"
+	r "github.com/revel/revel"
 )
 
+// App is main controller
 type App struct {
-	*revel.Controller
+	*r.Controller
 }
 
-func (c App) Index() revel.Result {
+// Index - start page of site
+func (c App) Index() r.Result {
+	return c.Render()
+}
+
+// AddTask - add a task
+func (c App) AddTask() r.Result {
+	return c.Render()
+}
+
+// UpdateTask - update a task
+func (c App) UpdateTask() r.Result {
+	return c.Render()
+}
+
+// DeleteTask - delete a task
+func (c App) DeleteTask() r.Result {
 	return c.Render()
 }
